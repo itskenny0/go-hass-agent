@@ -1,4 +1,4 @@
-module github.com/joshuar/go-hass-agent
+module github.com/itskenny0/go-hass-agent
 
 go 1.23.2
 
