@@ -39,10 +39,10 @@ func init() {
 	egid := syscall.Getegid()
 	gid := syscall.Getgid()
 
-	if uid != euid || gid != egid || uid == 0 {
-		slog.Error("go-hass-agent should not be run with additional privileges or as root.")
-		os.Exit(-1)
-	}
+	//if uid != euid || gid != egid || uid == 0 {
+		//slog.Error("go-hass-agent should not be run with additional privileges or as root.")
+		//os.Exit(-1)
+	//} there should be a command line flag for people who really want to run as root, but I'm ok with this for now
 }
 
 func main() {
